@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Kaushan+Script&display=swap");
+
+body {
+  background-color: black;
+  max-width: 1280px;
+  height: 90vh;
+  margin: 0 auto;
+  display: block;
+  padding: 2rem;
+  align-content: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+}
+h2 {
+  font-family: "Kaushan Script", cursive;
+  color: white;
+  text-align: center;
+}
+.soon {
+  color: red;
+}
