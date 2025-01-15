@@ -317,6 +317,10 @@ footer {
     gap: 1rem;
   }
 
+  li a {
+    color: white;
+  }
+
   .nav-menu.active {
     left: 0;
   }
