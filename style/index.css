@@ -338,6 +338,20 @@ footer {
     gap: 1rem;
   }
 
+  .projcont {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .projtxtcont {
+    flex-direction: column;
+    gap: 1rem;
+
+    h3 {
+      border-bottom: 1px solid white;
+    }
+  }
+
   .contactcont {
     gap: 1rem;
   }
