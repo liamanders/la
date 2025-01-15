@@ -3,26 +3,154 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/index.css" />
+    <script
+      src="https://kit.fontawesome.com/4ce549afde.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Liam Andersson</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="./sv.html">sv</a></li>
-        </ul>
-      </nav>
+      <div class="headercont">
+        <div class="name">
+          <h2><a href="/">LiamAndersson.net</a></h2>
+        </div>
+        <div class="nav">
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-link"><a href="#about">About</a></li>
+              <li class="nav-link"><a href="#projects">Projects</a></li>
+              <li class="nav-link"><a href="#contact">Contact</a></li>
+              <li class="nav-link"><a href="./sv">sv</a><a href="/">/en</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
-    <div class="container">
-      <h1>Welcome to liamandersson.net English</h1>
-      <h2>Website coming <span class="soon">Soon...</span></h2>
-      <h3>
-        For more info <a href="mailto:contact@liamandersson.net">Contact</a>
-      </h3>
-    </div>
+    <script src="script.js"></script>
+    <main>
+      <div class="popup" id="languagePopup">
+        <h4>Choose your language</h4>
+        <h4>Välj ditt språk</h4>
+        <button class="button english-btn" onclick="selectLanguage('en')">
+          English
+        </button>
+        <button class="button swedish-btn" onclick="selectLanguage('sv')">
+          Svenska
+        </button>
+      </div>
+
+      <section class="about" id="about">
+        <div class="aboutcont">
+          <div class="abouttxt">
+            <h2>About me</h2>
+            <h3>Hi! My Name is Liam Andersson</h3>
+            <h3>
+              I'm a full-stack developer with 1 year of experience. <br />I'm
+              passionate about crafting user-centric web applications. My
+              background as computer technician and audio mixing engineer and
+              music producer has equipped me with a unique skillset: patience, a
+              strong attention for detail, a creative problem-solving approach,
+              and the ability to work effectively within tight deadlines.
+            </h3>
+          </div>
+          <div class="aboutbtn">
+            <a
+              href="https://drive.google.com/file/d/1AqyB54J0GsiOcQczdUCvA0mNZec4Nhup/view?usp=sharing"
+              class="button"
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="projects" id="projects">
+        <div class="projectscont">
+          <h2>Projects in progress</h2>
+          <h3>
+            I'm currently developing two exciting websites using the MERN stack
+            utilizing React and TypeScript for the front-end of both projects,
+            while the back-end is powered by Node.js, Express.js, and MongoDB.
+          </h3>
+          <div class="projcont">
+            <div class="proj">
+              <img src="./images/Off.png" alt="Logo" class="logo1" />
+            </div>
+            <div class="proj">
+              <img src="./images/ENT.png" alt="Logo" class="logo2" />
+            </div>
+          </div>
+          <div class="projtxtcont">
+            <h3>
+              I'm creating a personalized digital hub with a React and
+              TypeScript front-end, allowing fans to delve into their music,
+              connect with them directly, and experience their unique artistic
+              vision.
+            </h3>
+            <h3>
+              I'm building a sleek, modern front-end with React and TypeScript,
+              showcasing their artists and releases with interactive elements.
+              The backend utilizes Node.js, Express.js, and MongoDB to manage
+              data efficiently.
+            </h3>
+          </div>
+          <div class="divider" style="width: 50%"></div>
+          <h2>Projects I worked on</h2>
+          <div class="projcont">
+            <div class="proj">
+              <img src="./images/showtime.png" alt="Logo" class="logo1" />
+            </div>
+            <div class="proj">
+              <img src="./images/ltw.png" alt="Logo" class="logo3" />
+            </div>
+          </div>
+          <div class="projtxtcont">
+            <h3>
+              Scrum master/Developer for MERN stack app allows musical artists
+              to create events and sell tickets.
+              <a href="https://github.com/FBetulDemir/event-manager.git"
+                >GitHub</a
+              >
+            </h3>
+            <h3>
+              Local, Travel and Weather app to help the user find information
+              about the weather and public transport for the address they search
+              for using React TypeScript and Express.js, Node.js, and multiple
+              APIs.
+              <a href="https://github.com/liamanders/local-travel-weather.git"
+                >GitHub</a
+              >
+            </h3>
+          </div>
+          <h3>
+            Checkout my GitHub for
+            <a href="https://github.com/liamanders" target="_blank"
+              >more projects</a
+            >
+          </h3>
+        </div>
+      </section>
+      <div class="divider"></div>
+    </main>
+    <footer class="contact" id="contact">
+      <div class="contactcont">
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/liam-andersson/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/liamanders" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <a href="mailto:contact@liamandersson.net" class="button">E-mail</a>
+      </div>
+    </footer>
   </body>
 </html>

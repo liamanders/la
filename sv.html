@@ -1,18 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/index.css" />
+    <script
+      src="https://kit.fontawesome.com/4ce549afde.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Liam Andersson</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Welcome to liamandersson.net</h1>
-      <h2>Website coming <span class="soon">Soon...</span></h2>
-      <h3>
-        For more info <a href="mailto:contact@liamandersson.net">Contact</a>
-      </h3>
-    </div>
+    <header>
+      <div class="headercont">
+        <div class="name">
+          <h2><a href="/">LiamAndersson.net</a></h2>
+        </div>
+        <div class="nav">
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-link"><a href="#about">Om mig</a></li>
+              <li class="nav-link"><a href="#projects">Projekt</a></li>
+              <li class="nav-link"><a href="#contact">Kontakta</a></li>
+              <li class="nav-link"><a href="./sv">sv</a><a href="/">/en</a></li>
+            </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script src="script.js"></script>
+    <main>
+      <section class="about" id="about">
+        <div class="aboutcont">
+          <div class="abouttxt">
+            <h2>Om mig</h2>
+            <h3>Hej! Mitt namn är Liam Andersson</h3>
+            <h3>
+              Jag är en fullstack-utvecklare med 1 års erfarenhet. <br />Jag är
+              väldigt intresserad av att skapa användarcentrerade
+              webbapplikationer. Min bakgrund som datatekniker och
+              ljudmixningsingenjör och musikproducent har utrustat mig med en
+              unik kompetens: tålamod, en stark känsla för detaljer, en kreativ
+              problemlösningsmetod och förmågan att arbeta effektivt inom snäva
+              deadlines.
+            </h3>
+          </div>
+          <div class="aboutbtn">
+            <a
+              href="https://drive.google.com/file/d/149wNPWfK9H-C0FAGrL1-M29-rmYMmzdk/view?usp=sharing"
+              class="button"
+              >Ladda ner CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <div class="divider"></div>
+      <section class="projects" id="projects">
+        <div class="projectscont">
+          <h2>Pågående projekt</h2>
+          <h3>
+            Jag håller för närvarande på att utveckla två spännande webbplatser
+            med MERN-stacken använda React och TypeScript för front-end av båda
+            projekten, medan back-end drivs av Node.js, Express.js och MongoDB.
+          </h3>
+          <div class="projcont">
+            <div class="proj">
+              <img src="./images/Off.png" alt="Logo" class="logo1" />
+            </div>
+            <div class="proj">
+              <img src="./images/ENT.png" alt="Logo" class="logo2" />
+            </div>
+          </div>
+          <div class="projtxtcont">
+            <h3>
+              Jag bygger ett personligt digitalt nav med en React och TypeScript
+              front-end, så att fans kan fördjupa sig i sin musik, kontakta dem
+              direkt och upplev deras unika konstnärliga vision.
+            </h3>
+            <h3>
+              Jag bygger en snygg, modern websida, front-end med React och
+              TypeScript, visar upp sina artister och releaser med interaktiva
+              inslag. Backend använder Node.js, Express.js och MongoDB för att
+              hantera data effektivt.
+            </h3>
+          </div>
+          <div class="divider" style="width: 50%"></div>
+          <h2>Projekt jag arbetat med</h2>
+          <div class="projcont">
+            <div class="proj">
+              <img src="./images/showtime.png" alt="Logo" class="logo1" />
+            </div>
+            <div class="proj">
+              <img src="./images/ltw.png" alt="Logo" class="logo3" />
+            </div>
+          </div>
+          <div class="projtxtcont">
+            <h3>
+              Scrum master/utvecklare för MERN stack app tillåter musikaliska
+              artister att skapa evenemang och sälja biljetter.
+              <a href="https://github.com/FBetulDemir/event-manager.git"
+                >GitHub</a
+              >
+            </h3>
+            <h3>
+              Local, Travel and Weather app för att hjälpa användaren att hitta
+              information om vädret och kollektivtrafiken för adressen de söker
+              för att använda React TypeScript och Express.js, Node.js och
+              multiple API's.
+              <a href="https://github.com/liamanders/local-travel-weather.git"
+                >GitHub</a
+              >
+            </h3>
+          </div>
+          <h3>
+            Kolla in min GitHub för
+            <a href="https://github.com/liamanders" target="_blank"
+              >fler projekt</a
+            >
+          </h3>
+        </div>
+      </section>
+      <div class="divider"></div>
+    </main>
+    <footer class="contact" id="contact">
+      <div class="contactcont">
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/liam-andersson/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/liamanders" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <a href="mailto:contact@liamandersson.net" class="button">E-mail</a>
+      </div>
+    </footer>
   </body>
 </html>
