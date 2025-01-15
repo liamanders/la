@@ -213,6 +213,7 @@ h3 {
   color: white;
   text-align: start;
   font-family: "DM Serif Display", serif;
+  letter-spacing: 2px;
 
   a {
     color: blue;
