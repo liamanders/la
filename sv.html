@@ -34,9 +34,8 @@
         </div>
       </div>
     </header>
-    <script src="script.js"></script>
     <main>
-      <section class="about" id="about">
+      <section class="about not-visible" id="about">
         <div class="aboutcont">
           <div class="abouttxt">
             <h2>Om mig</h2>
@@ -64,17 +63,17 @@
       <div class="divider"></div>
       <section class="projects" id="projects">
         <div class="projectscont">
-          <h2>Pågående projekt</h2>
-          <h3>
+          <h2 class="not-visible-right">Pågående projekt</h2>
+          <h3 class="not-visible">
             Jag håller för närvarande på att utveckla två spännande webbplatser
             med MERN-stacken använda React och TypeScript för front-end av båda
             projekten, medan back-end drivs av Node.js, Express.js och MongoDB.
           </h3>
           <div class="projcont">
-            <div class="proj">
+            <div class="proj not-visible">
               <img src="./images/Off.png" alt="Logo" class="logo1" />
             </div>
-            <div class="proj">
+            <div class="proj not-visible-right">
               <img src="./images/ENT.png" alt="Logo" class="logo2" />
             </div>
           </div>
@@ -92,20 +91,30 @@
             </h3>
           </div>
           <div class="divider" style="width: 50%"></div>
-          <h2>Projekt jag arbetat med</h2>
+          <h2 class="not-visible">Projekt jag arbetat med</h2>
           <div class="projcont">
             <div class="proj">
-              <img src="./images/showtime.png" alt="Logo" class="logo1" />
+              <img
+                src="./images/showtime.png"
+                alt="Logo"
+                class="logo1 not-visible"
+              />
             </div>
             <div class="proj">
-              <img src="./images/ltw.png" alt="Logo" class="logo3" />
+              <img
+                src="./images/ltw.png"
+                alt="Logo"
+                class="logo3 not-visible-right"
+              />
             </div>
           </div>
           <div class="projtxtcont">
             <h3>
               Scrum master/utvecklare för MERN stack app tillåter musikaliska
               artister att skapa evenemang och sälja biljetter.
-              <a href="https://github.com/FBetulDemir/event-manager.git"
+              <a
+                href="https://github.com/FBetulDemir/event-manager.git"
+                target="_blank"
                 >GitHub</a
               >
             </h3>
@@ -114,15 +123,17 @@
               information om vädret och kollektivtrafiken för adressen de söker
               för att använda React TypeScript och Express.js, Node.js och
               multiple API's.
-              <a href="https://github.com/liamanders/local-travel-weather.git"
+              <a
+                href="https://github.com/liamanders/local-travel-weather.git"
+                target="_blank"
                 >GitHub</a
               >
             </h3>
           </div>
           <div class="divider" style="width: 30%"></div>
-          <h3>Front-end projekt</h3>
+          <h3 class="not-visible-right">Front-end projekt</h3>
           <div class="projcont">
-            <div class="proj">
+            <div class="proj not-visible">
               <a
                 href="https://bhromaon8081.netlify.app/"
                 target="_blank"
@@ -134,7 +145,7 @@
                 </div>
               </a>
             </div>
-            <div class="proj">
+            <div class="proj not-visible">
               <a
                 href="https://reliable-beijinho-f28889.netlify.app/"
                 target="_blank"
@@ -146,7 +157,7 @@
                 </div>
               </a>
             </div>
-            <div class="proj">
+            <div class="proj not-visible">
               <a
                 href="https://sumusician.netlify.app/"
                 target="_blank"
@@ -169,6 +180,7 @@
       </section>
       <div class="divider"></div>
     </main>
+    <script src="script.js"></script>
     <footer class="contact" id="contact">
       <div class="contactcont">
         <div class="icons">

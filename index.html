@@ -34,7 +34,6 @@
         </div>
       </div>
     </header>
-    <script src="script.js"></script>
     <main>
       <div class="popup" id="languagePopup">
         <h4>Choose your language</h4>
@@ -47,7 +46,7 @@
         </button>
       </div>
 
-      <section class="about" id="about">
+      <section class="about not-visible" id="about">
         <div class="aboutcont">
           <div class="abouttxt">
             <h2>About me</h2>
@@ -74,18 +73,26 @@
       <div class="divider"></div>
       <section class="projects" id="projects">
         <div class="projectscont">
-          <h2>Projects in progress</h2>
-          <h3>
+          <h2 class="not-visible-right">Projects in progress</h2>
+          <h3 class="not-visible">
             I'm currently developing two exciting websites using the MERN stack
             utilizing React and TypeScript for the front-end of both projects,
             while the back-end is powered by Node.js, Express.js, and MongoDB.
           </h3>
           <div class="projcont">
             <div class="proj">
-              <img src="./images/Off.png" alt="Logo" class="logo1" />
+              <img
+                src="./images/Off.png"
+                alt="Logo"
+                class="logo1 not-visible"
+              />
             </div>
             <div class="proj">
-              <img src="./images/ENT.png" alt="Logo" class="logo2" />
+              <img
+                src="./images/ENT.png"
+                alt="Logo"
+                class="logo2 not-visible-right"
+              />
             </div>
           </div>
           <div class="projtxtcont">
@@ -103,20 +110,30 @@
             </h3>
           </div>
           <div class="divider" style="width: 50%"></div>
-          <h2>Projects I worked on</h2>
+          <h2 class="not-visible">Projects I worked on</h2>
           <div class="projcont">
             <div class="proj">
-              <img src="./images/showtime.png" alt="Logo" class="logo1" />
+              <img
+                src="./images/showtime.png"
+                alt="Logo"
+                class="logo1 not-visible"
+              />
             </div>
             <div class="proj">
-              <img src="./images/ltw.png" alt="Logo" class="logo3" />
+              <img
+                src="./images/ltw.png"
+                alt="Logo"
+                class="logo3 not-visible-right"
+              />
             </div>
           </div>
           <div class="projtxtcont">
             <h3>
               Scrum master/Developer for MERN stack app allows musical artists
               to create events and sell tickets.
-              <a href="https://github.com/FBetulDemir/event-manager.git"
+              <a
+                href="https://github.com/FBetulDemir/event-manager.git"
+                target="_blank"
                 >GitHub</a
               >
             </h3>
@@ -125,15 +142,17 @@
               about the weather and public transport for the address they search
               for using React TypeScript and Express.js, Node.js, and multiple
               APIs.
-              <a href="https://github.com/liamanders/local-travel-weather.git"
+              <a
+                href="https://github.com/liamanders/local-travel-weather.git"
+                target="_blank"
                 >GitHub</a
               >
             </h3>
           </div>
           <div class="divider" style="width: 30%"></div>
-          <h3>Front-end projects</h3>
+          <h3 class="not-visible-right">Front-end projects</h3>
           <div class="projcont">
-            <div class="proj">
+            <div class="proj not-visible">
               <a
                 href="https://bhromaon8081.netlify.app/"
                 target="_blank"
@@ -145,7 +164,7 @@
                 </div>
               </a>
             </div>
-            <div class="proj">
+            <div class="proj not-visible">
               <a
                 href="https://reliable-beijinho-f28889.netlify.app/"
                 target="_blank"
@@ -157,7 +176,7 @@
                 </div>
               </a>
             </div>
-            <div class="proj">
+            <div class="proj not-visible">
               <a
                 href="https://sumusician.netlify.app/"
                 target="_blank"
@@ -180,6 +199,7 @@
       </section>
       <div class="divider"></div>
     </main>
+    <script src="script.js"></script>
     <footer class="contact" id="contact">
       <div class="contactcont">
         <div class="icons">

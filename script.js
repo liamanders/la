@@ -27,3 +27,18 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+    } else {
+      entry.target.classList.remove("is-visible");
+    }
+  });
+});
+
+const notVisible = document.querySelectorAll(
+  ".not-visible, .not-visible-right"
+);
+notVisible.forEach((el) => observer.observe(el));
