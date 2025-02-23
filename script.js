@@ -38,7 +38,5 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const notVisible = document.querySelectorAll(
-  ".not-visible, .not-visible-right"
-);
+const notVisible = document.querySelectorAll(".not-visible");
 notVisible.forEach((el) => observer.observe(el));

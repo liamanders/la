@@ -15,6 +15,7 @@ header {
   max-height: 3rem;
   position: sticky;
   top: 0;
+  z-index: 777;
 }
 
 .headercont {
@@ -26,8 +27,8 @@ header {
   max-height: 3rem;
   max-width: 100%;
   text-transform: uppercase;
-  z-index: 999;
   border-radius: 0 0 5px 5px;
+  z-index: 777;
 }
 
 nav ul {
@@ -69,6 +70,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .button {
@@ -318,11 +320,7 @@ footer {
   transform: translateX(-100%);
   transition: opacity 1s ease, transform 1s ease;
 }
-.not-visible-right {
-  opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 1s ease, transform 1s ease;
-}
+
 .is-visible {
   opacity: 1;
   transform: translateX(0);
@@ -359,12 +357,14 @@ footer {
   .nav-menu {
     position: fixed;
     flex-direction: column;
-    left: -100%;
+    transform: translateY(-140%);
+    left: 0;
     top: 3.5rem;
     width: 100%;
     background-color: #333;
     padding: 1rem;
     gap: 1rem;
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
   li a {
@@ -372,7 +372,8 @@ footer {
   }
 
   .nav-menu.active {
-    left: 0;
+    transition: transform 0.5s ease;
+    transform: translateY(0);
   }
 
   .aboutcont {
