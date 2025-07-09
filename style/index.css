@@ -200,12 +200,22 @@ section {
   opacity: 0.7;
 }
 .logo1 {
-  width: 260px;
+  width: 200px;
   transition: opacity 0.3s ease;
 }
 
 .logo3 {
   width: 300px;
+}
+.logo2 {
+  width: 300px;
+}
+
+.webl {
+  h3 {
+    color: blue;
+    border-bottom: 1px solid blue;
+  }
 }
 
 .contactcont {
@@ -331,6 +341,9 @@ footer {
 }
 .proj:nth-child(3) {
   transition-delay: 400ms;
+}
+.hidden {
+  display: none;
 }
 
 @media (prefers-reduced-motion) {
